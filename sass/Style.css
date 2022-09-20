@@ -92,6 +92,7 @@ text-decoration: none;
 }
 
 .button_explorer {
+  text-decoration: none;
   background: rgb(255,0,254);
   background: linear-gradient(170deg, rgba(255,0,254,1) 0%, rgba(154,0,255,1) 100%);
   border-radius: 25px;
@@ -100,6 +101,10 @@ text-decoration: none;
   color: white;
   width: 170px;
   height: 40px;
+}
+
+.button_explorer:hover {
+  background: linear-gradient(70deg, rgba(255,0,254,1) 0%, rgba(154,0,255,1) 100%);
 }
 
 .fonctionnement {
