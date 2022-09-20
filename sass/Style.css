@@ -11,6 +11,7 @@
 
 element.style {
   font-size: 14px;
+  
 }
 
 html, body {
@@ -20,7 +21,6 @@ html, body {
   max-width: 350px;
   min-width: none;
   margin: 0 auto;
-  
 }
 
 .textGras {
@@ -67,6 +67,7 @@ html, body {
 
 .decorationNone {
 text-decoration: none;
+color: black;
 }
 
 .logo {
@@ -104,6 +105,8 @@ text-decoration: none;
 }
 
 .button_explorer:hover {
+  transition-duration: 100ms;
+  width: 200px;
   background: linear-gradient(70deg, rgba(255,0,254,1) 0%, rgba(154,0,255,1) 100%);
 }
 
@@ -131,6 +134,11 @@ text-decoration: none;
   width: 90%;
   border-radius: 15px;
   box-shadow: 0px 2px 20px 2px gray
+}
+
+.cubeRestaurant:hover {
+  transition-duration: 500ms;
+  width: 95%;
 }
 
 .img_restaurant {
