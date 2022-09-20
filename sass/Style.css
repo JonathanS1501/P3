@@ -16,9 +16,7 @@ element.style {
 
 html, body {
   font-family: 'Roboto Flex', sans-serif;
-  padding-left: 10px;
-  padding-right: 10px;
-  max-width: 350px;
+  max-width: 414px;
   min-width: none;
   margin: 0 auto;
 }
@@ -72,7 +70,8 @@ color: black;
 
 .logo {
   height: 50px;
-  box-shadow: 0px 2px 20px 2px gray
+  position: relative;
+  box-shadow:  0px 0px 10px 0px gray;
 }
 
 .logo_img {
@@ -97,7 +96,7 @@ color: black;
   background: rgb(255,0,254);
   background: linear-gradient(170deg, rgba(255,0,254,1) 0%, rgba(154,0,255,1) 100%);
   border-radius: 25px;
-  box-shadow: 0px 2px 20px 2px gray;
+  box-shadow: 0px 5px 20px 0px gray;
   font-size: 12px;
   color: white;
   width: 170px;
@@ -111,9 +110,52 @@ color: black;
 }
 
 .fonctionnement {
-  height: 350px;
-  background-color: rgb(179, 255, 255);
+  padding-top: 40px;
+  height: auto;
+  padding-left: 14px;
+  padding-bottom: 80px;
 }
+
+.titreFonctionnement {
+  padding-bottom: 30px;
+}
+
+.miniCard { 
+  height: 60px;
+  background-color:var(--gris);
+  width: 95%;
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px 0px lightgray;
+}
+
+.miniCardDetail {
+  margin: 0;
+  padding-left: 40px;
+  display: flex ;
+  flex-direction: row;
+  margin-top: 14px;
+}
+
+.miniCardDetail > h3 {
+  margin-top: 7px;
+  font-size: 16px;
+}
+
+.iconneFonctionnement {
+  padding-right: 30px;
+  margin-top: 5px;
+  font-size: 18px;
+  color: gray;
+}
+
+.miniCard:hover {
+  background-color: #eddfff;
+}
+
+.miniCard:hover > .iconneFonctionnement {
+  color: var(--Primaire);
+}
+
 
 /* Restaurant */
 
