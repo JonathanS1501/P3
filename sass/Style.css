@@ -17,8 +17,8 @@ element.style {
 html, body {
   font-family: 'Roboto Flex', sans-serif;
   max-width: 414px;
-  min-width: 320px;
-  margin: 0 auto;
+  min-width: 414px;
+  margin: auto;
 }
 
 .textGras {
@@ -131,11 +131,11 @@ color: black;
 }
 
 .miniCard { 
-  height: 60px;
+  height: 70px;
   background-color:var(--gris);
   width: 95%;
   border-radius: 15px;
-  box-shadow: 0px 5px 10px 0px lightgray;
+  box-shadow: 0px 2px 10px 0px lightgray;
  
 }
 
@@ -144,7 +144,7 @@ color: black;
   padding-left: 40px;
   display: flex ;
   flex-direction: row;
-  margin-top: 14px;
+  margin-top: 18px;
 }
 
 .miniCardDetail > h3 {
@@ -209,6 +209,20 @@ color: black;
   width: 95%;
 }
 
+
+.nouveau {
+  position: absolute;
+  width: 90px;
+  height: 30px;
+  margin-top: 16px;
+  margin-left: 270px;
+  background-color: #7ce6c6;
+  border-radius: 2px;
+  color: #235c4b;
+  font-size: 16px;
+  font-weight: 800;
+}
+
 .img_restaurant {
   background-size: cover;
   background-position: center;
@@ -223,24 +237,26 @@ color: black;
   padding-left: 8px;
   display: flex;
   flex-direction: row;
+  margin-top: -20px;
 }
-.cubeDetailRestaurant > h3 {
+.TitreRestaurant > h3 {
+  padding-top: 15px;
   margin: 0;
-  font-size: 18px;
+  font-size: 20px;
   padding-bottom: 6px;
 }
-.cubeDetailRestaurant > p {
+.TitreRestaurant > p {
   margin: 0;
-  font-size: 14px;
-  padding-bottom: 10px;
+  font-size: 18px;
+  padding-bottom: 15px;
 }
 
 .TitreRestaurant {
-  width: 170px;
+  width: 250px;
 }
 
-
 .cubeDetailRestaurantHeart {
+  display: block;
   font-size: 22px;
   margin-top: 30px;
   margin-left: 150px;
@@ -249,23 +265,53 @@ color: black;
 
 .cubeDetailRestaurantHeartSolid {
   display: none;
-  position: absolute;
-  margin-left: 310px;
-  margin-top: 10px;
   font-size: 22px;
+  margin-top: 30px;
+  margin-left: 150px;
+  margin-right: 20px;
 }
 
 .cubeDetailRestaurantHeart:hover {
-  display: block;
   color: var(--Primaire)
 }
 
 .cubeDetailRestaurantHeartSolid:hover {
   display: block;
-  color: #9356DC;
+  color: var(--Primaire);
 }
 
+/* footer */
+
 .footer {
-  height: 200px;
-  background-color: #FF79DA;
+  height: auto;
+  background-color: rgb(48, 48, 48);
+  padding: 25px;
+  padding-bottom: 50px;
 }
+
+.logoFooter {
+  width: 120px;
+  padding-bottom: 20px;
+}
+
+.blocFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.textFooter {
+  color: white;
+  font-size: 16px;
+}
+
+.iconneFooter {
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+.iconneFooter2 {
+  font-size: 10px;
+  padding-right: 10px;
+}
+
