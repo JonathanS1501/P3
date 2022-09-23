@@ -1,0 +1,104 @@
+/* general */
+:root {
+    --Primaire: #9356DC;
+    --Secondaire: #FF79DA;
+    --Tertiaire:#99E2D0;
+    --gris: #f6f6f6;
+    --gris2: #eaeaea;
+   }
+   
+  
+  element.style {
+    font-size: 14px;
+    
+  }
+  
+  html, body {
+    font-family: 'Roboto Flex', sans-serif;
+    width: 100%;
+    max-width: 414px;
+    min-width: 414px;
+    margin: auto;
+  }
+  
+  .textGras {
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  .flexCentre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    
+  }
+  .flexAround {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .flexBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .flexColumnCentre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .flexColumnAround {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+  }
+  .flexColumnBetween {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+  }
+  
+  .decorationNone {
+  text-decoration: none;
+  color: black;
+  }
+  
+  .logo {
+    height: 50px;
+    position: relative;
+  }
+  
+  .logo_img {
+    width: 140px;
+  }
+
+  .flecheHeader {
+    margin-left: -110px;
+    margin-right: 110px;
+  }
+
+  /* image */
+
+  .imgRestaurant {
+    width: 100%;
+    height: 250px;
+    position: relative;
+  }
+
+  /* menu */
+
+  .menu {
+    position: absolute;
+    margin-top: -50px;
+    height: 1500px;
+    max-width: 414px;
+    min-width: 414px;
+    width: 100%;
+    background-color: #9356DC;
+    border-radius: 40px 40px 0px 0px;
+  }
