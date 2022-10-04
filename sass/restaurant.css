@@ -159,7 +159,7 @@
 
   .prix {
     position: absolute;
-    margin-top: 35;
+    margin-top: -8;
     margin-left: -90;
     font-weight: bold;
     color: rgb(71, 71, 71);
@@ -167,20 +167,27 @@
     padding-left: 40px;
   }
 
+  .iconnePrix {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    
+  }
 
   .animationPrix {
     position: absolute;
     left: 395px;
     border-radius: 0px 15px 15px 0px;
     margin: 0;
-    
-    width: 70px;
+    width: 60px;
     height: 70px;
   }
 
   .animationPrix:hover {
     transition: 100ms;
-    left: 323px;
+    left: 333px;
     background-color: var(--Tertiaire);
   }
 
