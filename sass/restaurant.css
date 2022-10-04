@@ -158,18 +158,32 @@
   }
 
   .prix {
-    padding: 10px;
     position: absolute;
-    left: 85%;
-    margin-top: 14;
-    transform: translate(-50%,-50%);
+    margin-top: 35;
+    margin-left: -90;
     font-weight: bold;
     color: rgb(71, 71, 71);
+    background: linear-gradient(90deg, rgba(255, 0, 0, 0) 0%, rgb(255, 255, 255) 50%);
+    padding-left: 40px;
   }
 
-  .prix:hover {
-    background-color: #99E2D0;
+
+  .animationPrix {
+    position: absolute;
+    left: 395px;
+    border-radius: 0px 15px 15px 0px;
+    margin: 0;
+    
+    width: 70px;
+    height: 70px;
   }
+
+  .animationPrix:hover {
+    transition: 100ms;
+    left: 323px;
+    background-color: var(--Tertiaire);
+  }
+
 
   .button_explorer {
     margin-top: 20px;
