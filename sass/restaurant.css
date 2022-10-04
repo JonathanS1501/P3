@@ -158,12 +158,19 @@
   }
 
   .prix {
-    background-color: #9356DC;
-    margin: 0;
+    padding: 10px;
+    position: absolute;
+    left: 85%;
+    margin-top: 14;
+    transform: translate(-50%,-50%);
+    font-weight: bold;
+    color: rgb(71, 71, 71);
   }
 
+  .prix:hover {
+    background-color: #99E2D0;
+  }
 
-  
   .button_explorer {
     margin-top: 20px;
     text-decoration: none;
