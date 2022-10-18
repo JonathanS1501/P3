@@ -1,21 +1,10 @@
-
 /* general */
-:root {
-  --Primaire: #9356DC;
-  --Secondaire: #FF79DA;
-  --Tertiaire:#99E2D0;
-  --gris: #f6f6f6;
-  --gris2: #eaeaea;
- }
- 
-
 element.style {
   font-size: 14px;
-  
 }
 
 html, body {
-  font-family: 'Roboto Flex', sans-serif;
+  font-family: "Roboto Flex", sans-serif;
   width: 100%;
   max-width: 414px;
   min-width: 414px;
@@ -32,18 +21,20 @@ html, body {
   justify-content: center;
   align-items: center;
   gap: 5px;
-  
 }
+
 .flexAround {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
 .flexBetween {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .flexColumnCentre {
   display: flex;
   flex-direction: column;
@@ -51,28 +42,28 @@ html, body {
   align-items: center;
   gap: 20px;
 }
+
 .flexColumnAround {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  
 }
+
 .flexColumnBetween {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
 }
 
 .decorationNone {
-text-decoration: none;
-color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .logo {
   height: 50px;
   position: relative;
-  box-shadow:  0px 0px 10px 0px gray;
+  box-shadow: 0px 0px 10px 0px gray;
 }
 
 .logo_img {
@@ -81,12 +72,12 @@ color: black;
 
 .ville {
   height: 40px;
-  background-color: var(--gris2);
+  background-color: #eaeaea;
 }
 
 .explorer {
   height: auto;
-  background-color: var(--gris);
+  background-color: #f6f6f6;
   margin: 0px;
   padding-top: 30px;
   padding-bottom: 50px;
@@ -103,8 +94,8 @@ color: black;
 .button_explorer {
   margin-top: 20px;
   text-decoration: none;
-  background: rgb(255,0,254);
-  background: linear-gradient(170deg, rgba(255,0,254,1) 0%, rgba(154,0,255,1) 100%);
+  background: rgb(255, 0, 254);
+  background: linear-gradient(170deg, rgb(255, 0, 254) 0%, rgb(154, 0, 255) 100%);
   border-radius: 25px;
   box-shadow: 0px 5px 20px 0px gray;
   font-size: 12px;
@@ -116,7 +107,7 @@ color: black;
 .button_explorer:hover {
   transition-duration: 100ms;
   width: 200px;
-  background: linear-gradient(70deg, rgba(255,0,254,1) 0%, rgba(154,0,255,1) 100%);
+  background: linear-gradient(70deg, rgb(255, 0, 254) 0%, rgb(154, 0, 255) 100%);
 }
 
 .fonctionnement {
@@ -131,9 +122,9 @@ color: black;
   padding-bottom: 30px;
 }
 
-.miniCard { 
+.miniCard {
   height: 70px;
-  background-color:var(--gris);
+  background-color: #f6f6f6;
   width: 95%;
   border-radius: 15px;
   box-shadow: 0px 2px 10px 0px lightgray;
@@ -142,7 +133,7 @@ color: black;
 .miniCardDetail {
   margin: 0;
   padding-left: 40px;
-  display: flex ;
+  display: flex;
   flex-direction: row;
   margin-top: 18px;
 }
@@ -175,40 +166,39 @@ color: black;
   background-color: #eddfff;
 }
 
-.miniCardDetail:hover > .iconneFonctionnement {
-  color: var(--Primaire);
+.miniCard:hover .miniCardDetail .iconneFonctionnement {
+  color: #9356DC;
 }
 
-.miniCardDetail > h3 {
+.miniCardDetail h3 {
   font-size: 14px;
 }
 
 /* Restaurant */
-
 .titreRestaurant {
   padding-left: 14px;
   padding-bottom: 20px;
 }
+
 .restaurant {
   height: auto;
   padding-top: 40px;
   padding-bottom: 80px;
-  background-color: var(--gris);
+  background-color: #f6f6f6;
 }
 
 .cubeRestaurant {
   height: auto;
-  background-color:white;
+  background-color: white;
   width: 90%;
   border-radius: 15px;
-  box-shadow: 0px 2px 20px 2px gray
+  box-shadow: 0px 2px 20px 2px gray;
 }
 
 .cubeRestaurant:hover {
   transition-duration: 500ms;
   width: 95%;
 }
-
 
 .nouveau {
   position: absolute;
@@ -223,7 +213,7 @@ color: black;
   font-weight: 800;
 }
 
-.cubeRestaurant:hover > .nouveau {
+.cubeRestaurant:hover .nouveau {
   transition-duration: 500ms;
   color: white;
 }
@@ -237,21 +227,23 @@ color: black;
   object-fit: cover;
   padding-bottom: 10px;
 }
+
 .cubeDetailRestaurant {
   width: 100%;
   padding-left: 8px;
   display: flex;
   flex-direction: row;
   margin-top: -20px;
-
 }
-.TitreRestaurant > h3 {
+
+.TitreRestaurant h3 {
   padding-top: 15px;
   margin: 0;
   font-size: 20px;
   padding-bottom: 6px;
 }
-.TitreRestaurant > p {
+
+.TitreRestaurant p {
   margin: 0;
   font-size: 18px;
   padding-bottom: 15px;
@@ -264,31 +256,35 @@ color: black;
 .cubeDetailRestaurantHeart {
   display: block;
   font-size: 22px;
-  margin-top: 30px;
-  margin-left: 150px;
-  margin-right: 20px;
 }
 
 .cubeDetailRestaurantHeartSolid {
   display: none;
   font-size: 22px;
+}
+
+.iconneHeart {
+  width: 25px;
+  height: 25px;
   margin-top: 30px;
   margin-left: 150px;
   margin-right: 20px;
 }
 
-.cubeDetailRestaurant:hover > .cubeDetailRestaurantHeart{
+.iconneHeart:hover .cubeDetailRestaurantHeart {
   display: none;
-  color: var(--Primaire)
+  color: #9356DC;
 }
 
-.cubeDetailRestaurant:hover > .cubeDetailRestaurantHeartSolid {
+.iconneHeart:hover .cubeDetailRestaurantHeartSolid {
   display: block;
-  color: var(--Primaire);
+  font-size: 22px;
+  background: -webkit-linear-gradient(0deg, rgb(255, 0, 254) 0%, rgb(154, 0, 255) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* footer */
-
 .footer {
   height: auto;
   background-color: rgb(48, 48, 48);
@@ -320,5 +316,4 @@ color: black;
 .iconneFooter2 {
   font-size: 10px;
   padding-right: 10px;
-}
-
+}/*# sourceMappingURL=style.css.map */
