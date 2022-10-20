@@ -121,13 +121,12 @@ $gris2: #eaeaea;
     margin-bottom: 20px;
     border-bottom:3px solid $Tertiaire;
     width: 40px;
+    p {
+      margin-bottom: 4px;
+       }
    }
 
-   .titreCard {
-     p {
-    margin-bottom: 4px;
-     }
-   }
+   
 
   .miniCard { 
     height: 70px;
@@ -135,29 +134,34 @@ $gris2: #eaeaea;
     border-radius: 15px;
     box-shadow: 0px 2px 10px 0px lightgray;
     margin-bottom: 10px;
+    h3 {
+      font-size: 18px;
+      padding-left: 10px;
+      padding-top: 10px;
+      margin: 0;
+       }
   }
 
-  .miniCard {
-     h3 {
-    font-size: 18px;
-    padding-left: 10px;
-    padding-top: 10px;
-    margin: 0;
-     }
-  }
+
+ 
 
   .pMiniCard {
     padding-left: 10px;
     display: flex;
     flex-direction: row;
+    p {
+      padding-top: 5px;
+      margin: 0;
+      color: rgb(71, 71, 71);
+       }
+       h3 {
+        font-size: 18px;
+        padding-left: 10px;
+        padding-top: 10px;
+        margin: 0;
+         }
   }
-  .pMiniCard {
-     p {
-    padding-top: 5px;
-    margin: 0;
-    color: rgb(71, 71, 71);
-     }
-  }
+
 
   .point {
     display: block;
@@ -172,7 +176,7 @@ $gris2: #eaeaea;
   .prix {
     position: absolute;
     margin-top: -8;
-    margin-left: -90;
+    margin-left: -95;
     font-weight: bold;
     color: rgb(71, 71, 71);
     background: linear-gradient(90deg, rgba(255, 0, 0, 0) 0%, rgb(255, 255, 255) 50%);
@@ -190,7 +194,7 @@ $gris2: #eaeaea;
 
   .animationPrix {
     position: absolute;
-    left: 392px;
+    left: 397px;
     margin-top: 100px;
     border-radius: 0px 15px 15px 0px;
     margin: 0;

@@ -142,12 +142,13 @@ $gris2: #eaeaea;
     display: flex ;
     flex-direction: row;
     margin-top: 18px;
+    h3 {
+    margin-top: 8px;
+    font-size: 14px;
+  }
   }
   
-  .miniCardDetail > h3 {
-    margin-top: 8px;
-    font-size: 16px;
-  }
+  
   
   .iconneFonctionnement {
     padding-right: 30px;
@@ -180,11 +181,7 @@ $gris2: #eaeaea;
      
   }
   
-  .miniCardDetail {
-     h3 {
-    font-size: 14px; 
-     }
-  }
+
   
   /* Restaurant */
   
@@ -250,24 +247,22 @@ $gris2: #eaeaea;
     margin-top: -20px;
   
   }
-  .TitreRestaurant {
-     h3 {
-    padding-top: 15px;
-    margin: 0;
-    font-size: 20px;
-    padding-bottom: 6px;
-     }
-  }
-  .TitreRestaurant {
-   p {
-    margin: 0;
-    font-size: 18px;
-    padding-bottom: 15px;
-   }
-  }
+ 
+  
   
   .TitreRestaurant {
     width: 250px;
+    h3 {
+      padding-top: 15px;
+      margin: 0;
+      font-size: 20px;
+      padding-bottom: 6px;
+       }
+       p {
+        margin: 0;
+        font-size: 18px;
+        padding-bottom: 15px;
+       }
   }
   
   .cubeDetailRestaurantHeart {

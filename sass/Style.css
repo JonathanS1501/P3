@@ -137,10 +137,9 @@ html, body {
   flex-direction: row;
   margin-top: 18px;
 }
-
-.miniCardDetail > h3 {
+.miniCardDetail h3 {
   margin-top: 8px;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .iconneFonctionnement {
@@ -168,10 +167,6 @@ html, body {
 
 .miniCard:hover .miniCardDetail .iconneFonctionnement {
   color: #9356DC;
-}
-
-.miniCardDetail h3 {
-  font-size: 14px;
 }
 
 /* Restaurant */
@@ -236,21 +231,19 @@ html, body {
   margin-top: -20px;
 }
 
+.TitreRestaurant {
+  width: 250px;
+}
 .TitreRestaurant h3 {
   padding-top: 15px;
   margin: 0;
   font-size: 20px;
   padding-bottom: 6px;
 }
-
 .TitreRestaurant p {
   margin: 0;
   font-size: 18px;
   padding-bottom: 15px;
-}
-
-.TitreRestaurant {
-  width: 250px;
 }
 
 .cubeDetailRestaurantHeart {
