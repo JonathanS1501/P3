@@ -98,20 +98,26 @@ $gris2: #eaeaea;
     width: 100%;
     background-color: $gris;
     border-radius: 40px 40px 0px 0px;
+  
   }
-
+  
   .titre {
-    margin-top: 25px;
+    margin-top: 40px;
     width: 90%;
     height: 25px;
     font-style: italic;
+    font-size: 34px;
+    margin-bottom: 20px;
   }
 
   .Heart {
-    margin-left: 180px;
+    font-size: 30px;
+    margin-left: 300px;
+    margin-top: -38px;
   }
 
   .card {
+    margin-top: 20px;
     width: 90%;
     height: auto;
   }
@@ -139,9 +145,28 @@ $gris2: #eaeaea;
       padding-left: 10px;
       padding-top: 10px;
       margin: 0;
+      width: 300px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; 
        }
+       
   }
-
+  .miniCard {
+    animation-duration: 1s;
+    animation-name: anim;
+  }
+  
+  @keyframes anim {
+    from {
+      margin-top: 10%;
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 100%;
+    }
+  }
 
  
 
@@ -153,24 +178,11 @@ $gris2: #eaeaea;
       padding-top: 5px;
       margin: 0;
       color: rgb(71, 71, 71);
+      width: 300px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; 
        }
-       h3 {
-        font-size: 18px;
-        padding-left: 10px;
-        padding-top: 10px;
-        margin: 0;
-         }
-  }
-
-
-  .point {
-    display: block;
-  }
-
-  .miniCard:hover {
-    .point {
-    display: block;
-    }
   }
 
   .prix {
@@ -179,7 +191,7 @@ $gris2: #eaeaea;
     margin-left: -95;
     font-weight: bold;
     color: rgb(71, 71, 71);
-    background: linear-gradient(90deg, rgba(255, 0, 0, 0) 0%, rgb(255, 255, 255) 50%);
+    
     padding-left: 40px;
   }
 
@@ -211,7 +223,16 @@ $gris2: #eaeaea;
     width: 60px;
     height: 70px;
     /* zoom */
-   }
+    }
+    .pMiniCard {
+      p {
+        width: 230px;
+        transition: 250ms;
+      }
+    }
+    h3 {
+      width: 230px;
+    }
   }
 
   .miniCard:hover {
@@ -279,3 +300,5 @@ $gris2: #eaeaea;
   font-size: 10px;
   padding-right: 10px;
 }
+
+
