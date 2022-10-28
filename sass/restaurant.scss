@@ -5,6 +5,7 @@ $Secondaire: #FF79DA;
 $Tertiaire: #99E2D0;
 $gris: #f6f6f6;
 $gris2: #eaeaea;
+
    
   element.style {
     font-size: 14px;
@@ -116,53 +117,146 @@ $gris2: #eaeaea;
     margin-top: -38px;
   }
 
+  
+
   .card {
     margin-top: 20px;
     width: 90%;
     height: auto;
+    .titreCard {
+      font-size: 20px;
+      margin-bottom: 20px;
+      border-bottom:3px solid $Tertiaire;
+      width: 40px;
+      p {
+        margin-bottom: 4px;
+         }
+     }
+     .miniCard1  { 
+      height: 70px;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0px 2px 10px 0px lightgray;
+      margin-bottom: 10px;
+      h3 {
+        font-size: 18px;
+        padding-left: 10px;
+        padding-top: 10px;
+        margin: 0;
+        width: 300px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; 
+         }
+         .pMiniCard {
+          padding-left: 10px;
+          display: flex;
+          flex-direction: row;
+          p {
+            padding-top: 5px;
+            margin: 0;
+            color: rgb(71, 71, 71);
+            width: 300px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; 
+             }
+        }
+         
+    }
+    .miniCard2  { 
+      height: 70px;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0px 2px 10px 0px lightgray;
+      margin-bottom: 10px;
+      h3 {
+        font-size: 18px;
+        padding-left: 10px;
+        padding-top: 10px;
+        margin: 0;
+        width: 300px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; 
+         }
+         .pMiniCard {
+          padding-left: 10px;
+          display: flex;
+          flex-direction: row;
+          p {
+            padding-top: 5px;
+            margin: 0;
+            color: rgb(71, 71, 71);
+            width: 300px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; 
+             }
+        }
+         
+    }
+    .miniCard3  { 
+      height: 70px;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0px 2px 10px 0px lightgray;
+      margin-bottom: 10px;
+      h3 {
+        font-size: 18px;
+        padding-left: 10px;
+        padding-top: 10px;
+        margin: 0;
+        width: 300px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; 
+         }
+         .pMiniCard {
+          padding-left: 10px;
+          display: flex;
+          flex-direction: row;
+          p {
+            padding-top: 5px;
+            margin: 0;
+            color: rgb(71, 71, 71);
+            width: 300px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; 
+             }
+        }
+         
+    }
   }
-
-   .titreCard {
-    font-size: 20px;
-    margin-bottom: 20px;
-    border-bottom:3px solid $Tertiaire;
-    width: 40px;
-    p {
-      margin-bottom: 4px;
-       }
-   }
 
    
 
-  .miniCard { 
-    height: 70px;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0px 2px 10px 0px lightgray;
-    margin-bottom: 10px;
-    h3 {
-      font-size: 18px;
-      padding-left: 10px;
-      padding-top: 10px;
-      margin: 0;
-      width: 300px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis; 
-       }
-       
-  }
-  .miniCard {
-    animation-duration: 1s;
+   
+
+  
+  .miniCard1  {
+    animation-duration: 2s;
     animation-name: anim;
+    animation-delay: 0ms;
+  }
+  .miniCard2  {
+    animation-duration: 2s;
+    animation-name: anim;
+    animation-delay: 50ms;
+  }
+  .miniCard3  {
+    animation-duration: 2s;
+    animation-name: anim;
+    animation-delay: 100ms;
   }
   
   @keyframes anim {
     from {
-      margin-top: 10%;
-      opacity: 0;
+      
+      opacity: 0%;
     }
-  
+    
     to {
       opacity: 100%;
     }
@@ -170,20 +264,7 @@ $gris2: #eaeaea;
 
  
 
-  .pMiniCard {
-    padding-left: 10px;
-    display: flex;
-    flex-direction: row;
-    p {
-      padding-top: 5px;
-      margin: 0;
-      color: rgb(71, 71, 71);
-      width: 300px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis; 
-       }
-  }
+  
 
   .prix {
     position: absolute;

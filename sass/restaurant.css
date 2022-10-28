@@ -112,25 +112,23 @@ html, body {
   width: 90%;
   height: auto;
 }
-
-.titreCard {
+.card .titreCard {
   font-size: 20px;
   margin-bottom: 20px;
   border-bottom: 3px solid #99E2D0;
   width: 40px;
 }
-.titreCard p {
+.card .titreCard p {
   margin-bottom: 4px;
 }
-
-.miniCard {
+.card .miniCard1 {
   height: 70px;
   background-color: white;
   border-radius: 15px;
   box-shadow: 0px 2px 10px 0px lightgray;
   margin-bottom: 10px;
 }
-.miniCard h3 {
+.card .miniCard1 h3 {
   font-size: 18px;
   padding-left: 10px;
   padding-top: 10px;
@@ -140,27 +138,74 @@ html, body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
-.miniCard {
-  animation-duration: 1s;
-  animation-name: anim;
-}
-
-@keyframes anim {
-  from {
-    margin-top: 10%;
-    opacity: 0;
-  }
-  to {
-    opacity: 100%;
-  }
-}
-.pMiniCard {
+.card .miniCard1 .pMiniCard {
   padding-left: 10px;
   display: flex;
   flex-direction: row;
 }
-.pMiniCard p {
+.card .miniCard1 .pMiniCard p {
+  padding-top: 5px;
+  margin: 0;
+  color: rgb(71, 71, 71);
+  width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card .miniCard2 {
+  height: 70px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 2px 10px 0px lightgray;
+  margin-bottom: 10px;
+}
+.card .miniCard2 h3 {
+  font-size: 18px;
+  padding-left: 10px;
+  padding-top: 10px;
+  margin: 0;
+  width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card .miniCard2 .pMiniCard {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.card .miniCard2 .pMiniCard p {
+  padding-top: 5px;
+  margin: 0;
+  color: rgb(71, 71, 71);
+  width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card .miniCard3 {
+  height: 70px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 2px 10px 0px lightgray;
+  margin-bottom: 10px;
+}
+.card .miniCard3 h3 {
+  font-size: 18px;
+  padding-left: 10px;
+  padding-top: 10px;
+  margin: 0;
+  width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card .miniCard3 .pMiniCard {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.card .miniCard3 .pMiniCard p {
   padding-top: 5px;
   margin: 0;
   color: rgb(71, 71, 71);
@@ -170,6 +215,32 @@ html, body {
   text-overflow: ellipsis;
 }
 
+.miniCard1 {
+  animation-duration: 2s;
+  animation-name: anim;
+  animation-delay: 0ms;
+}
+
+.miniCard2 {
+  animation-duration: 2s;
+  animation-name: anim;
+  animation-delay: 50ms;
+}
+
+.miniCard3 {
+  animation-duration: 2s;
+  animation-name: anim;
+  animation-delay: 100ms;
+}
+
+@keyframes anim {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
 .prix {
   position: absolute;
   margin-top: -8;
