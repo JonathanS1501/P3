@@ -117,7 +117,42 @@ $gris2: #eaeaea;
     margin-top: -38px;
   }
 
-  
+  @mixin minicard { 
+
+    
+      height: 70px;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0px 2px 10px 0px lightgray;
+      margin-bottom: 10px;
+      h3 {
+        font-size: 18px;
+        padding-left: 10px;
+        padding-top: 10px;
+        margin: 0;
+        width: 300px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; 
+         }
+         .pMiniCard {
+          padding-left: 10px;
+          display: flex;
+          flex-direction: row;
+          p {
+            padding-top: 5px;
+            margin: 0;
+            color: rgb(71, 71, 71);
+            width: 300px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; 
+             }
+        }
+         
+    
+    
+  }
 
   .card {
     margin-top: 20px;
@@ -132,102 +167,16 @@ $gris2: #eaeaea;
         margin-bottom: 4px;
          }
      }
-     .miniCard1  { 
-      height: 70px;
-      background-color: white;
-      border-radius: 15px;
-      box-shadow: 0px 2px 10px 0px lightgray;
-      margin-bottom: 10px;
-      h3 {
-        font-size: 18px;
-        padding-left: 10px;
-        padding-top: 10px;
-        margin: 0;
-        width: 300px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis; 
-         }
-         .pMiniCard {
-          padding-left: 10px;
-          display: flex;
-          flex-direction: row;
-          p {
-            padding-top: 5px;
-            margin: 0;
-            color: rgb(71, 71, 71);
-            width: 300px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis; 
-             }
-        }
-         
-    }
-    .miniCard2  { 
-      height: 70px;
-      background-color: white;
-      border-radius: 15px;
-      box-shadow: 0px 2px 10px 0px lightgray;
-      margin-bottom: 10px;
-      h3 {
-        font-size: 18px;
-        padding-left: 10px;
-        padding-top: 10px;
-        margin: 0;
-        width: 300px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis; 
-         }
-         .pMiniCard {
-          padding-left: 10px;
-          display: flex;
-          flex-direction: row;
-          p {
-            padding-top: 5px;
-            margin: 0;
-            color: rgb(71, 71, 71);
-            width: 300px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis; 
-             }
-        }
-         
-    }
-    .miniCard3  { 
-      height: 70px;
-      background-color: white;
-      border-radius: 15px;
-      box-shadow: 0px 2px 10px 0px lightgray;
-      margin-bottom: 10px;
-      h3 {
-        font-size: 18px;
-        padding-left: 10px;
-        padding-top: 10px;
-        margin: 0;
-        width: 300px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis; 
-         }
-         .pMiniCard {
-          padding-left: 10px;
-          display: flex;
-          flex-direction: row;
-          p {
-            padding-top: 5px;
-            margin: 0;
-            color: rgb(71, 71, 71);
-            width: 300px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis; 
-             }
-        }
-         
-    }
+     .miniCard1 {
+      @include minicard;
+     }
+     .miniCard2 {
+      @include minicard;
+     }
+     .miniCard3 {
+      @include minicard;
+     }
+
   }
 
    
@@ -296,7 +245,7 @@ $gris2: #eaeaea;
     
   }
 
-  .miniCard:hover {
+  .miniCard1:hover {
    .animationPrix {
     transition: 500ms;
     left: 333px;
@@ -316,7 +265,7 @@ $gris2: #eaeaea;
     }
   }
 
-  .miniCard:hover {
+  .miniCard1:hover {
      .animationPrix {
          .iconnePrix {
     color: white;
@@ -325,6 +274,64 @@ $gris2: #eaeaea;
          }
         }
   }  
+  .miniCard2:hover {
+    .animationPrix {
+     transition: 500ms;
+     left: 333px;
+     background-color: $Tertiaire;
+     width: 60px;
+     height: 70px;
+     /* zoom */
+     }
+     .pMiniCard {
+       p {
+         width: 230px;
+         transition: 250ms;
+       }
+     }
+     h3 {
+       width: 230px;
+     }
+   }
+ 
+   .miniCard2:hover {
+      .animationPrix {
+          .iconnePrix {
+     color: white;
+     transition: 800ms;
+     transform: rotate(0deg);
+          }
+         }
+   }  
+   .miniCard3:hover {
+    .animationPrix {
+     transition: 500ms;
+     left: 333px;
+     background-color: $Tertiaire;
+     width: 60px;
+     height: 70px;
+     /* zoom */
+     }
+     .pMiniCard {
+       p {
+         width: 230px;
+         transition: 250ms;
+       }
+     }
+     h3 {
+       width: 230px;
+     }
+   }
+ 
+   .miniCard3:hover {
+      .animationPrix {
+          .iconnePrix {
+     color: white;
+     transition: 800ms;
+     transform: rotate(0deg);
+          }
+         }
+   }  
 
   .button_explorer {
     margin-top: 20px;

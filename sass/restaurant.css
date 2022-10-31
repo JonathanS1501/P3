@@ -269,7 +269,7 @@ html, body {
   height: 70px;
 }
 
-.miniCard:hover .animationPrix {
+.miniCard1:hover .animationPrix {
   transition: 500ms;
   left: 333px;
   background-color: #99E2D0;
@@ -277,15 +277,59 @@ html, body {
   height: 70px;
   /* zoom */
 }
-.miniCard:hover .pMiniCard p {
+.miniCard1:hover .pMiniCard p {
   width: 230px;
   transition: 250ms;
 }
-.miniCard:hover h3 {
+.miniCard1:hover h3 {
   width: 230px;
 }
 
-.miniCard:hover .animationPrix .iconnePrix {
+.miniCard1:hover .animationPrix .iconnePrix {
+  color: white;
+  transition: 800ms;
+  transform: rotate(0deg);
+}
+
+.miniCard2:hover .animationPrix {
+  transition: 500ms;
+  left: 333px;
+  background-color: #99E2D0;
+  width: 60px;
+  height: 70px;
+  /* zoom */
+}
+.miniCard2:hover .pMiniCard p {
+  width: 230px;
+  transition: 250ms;
+}
+.miniCard2:hover h3 {
+  width: 230px;
+}
+
+.miniCard2:hover .animationPrix .iconnePrix {
+  color: white;
+  transition: 800ms;
+  transform: rotate(0deg);
+}
+
+.miniCard3:hover .animationPrix {
+  transition: 500ms;
+  left: 333px;
+  background-color: #99E2D0;
+  width: 60px;
+  height: 70px;
+  /* zoom */
+}
+.miniCard3:hover .pMiniCard p {
+  width: 230px;
+  transition: 250ms;
+}
+.miniCard3:hover h3 {
+  width: 230px;
+}
+
+.miniCard3:hover .animationPrix .iconnePrix {
   color: white;
   transition: 800ms;
   transform: rotate(0deg);
