@@ -176,6 +176,9 @@ $gris2: #eaeaea;
      .miniCard3 {
       @include minicard;
      }
+     .miniCard4 {
+      @include minicard;
+     }
 
   }
 
@@ -198,6 +201,11 @@ $gris2: #eaeaea;
     animation-duration: 2s;
     animation-name: anim;
     animation-delay: 100ms;
+  }
+  .miniCard4  {
+    animation-duration: 2s;
+    animation-name: anim;
+    animation-delay: 150ms;
   }
   
   @keyframes anim {
@@ -245,93 +253,48 @@ $gris2: #eaeaea;
     
   }
 
-  .miniCard1:hover {
-   .animationPrix {
-    transition: 500ms;
-    left: 333px;
-    background-color: $Tertiaire;
-    width: 60px;
-    height: 70px;
-    /* zoom */
-    }
-    .pMiniCard {
-      p {
-        width: 230px;
-        transition: 250ms;
+  @mixin animPrix {
+    .animationPrix {
+      transition: 500ms;
+      left: 333px;
+      background-color: $Tertiaire;
+      width: 60px;
+      height: 70px;
+      /* zoom */
       }
-    }
-    h3 {
-      width: 230px;
-    }
+      .iconnePrix {
+        color: white;
+        transition: 800ms;
+        transform: rotate(0deg);
+             }
+            
+      .pMiniCard {
+        p {
+          width: 230px;
+          transition: 250ms;
+        }
+      }
+      h3 {
+        width: 230px;
+      }
+      
   }
 
   .miniCard1:hover {
-     .animationPrix {
-         .iconnePrix {
-    color: white;
-    transition: 800ms;
-    transform: rotate(0deg);
-         }
-        }
-  }  
+   @include animPrix();
+  }
   .miniCard2:hover {
-    .animationPrix {
-     transition: 500ms;
-     left: 333px;
-     background-color: $Tertiaire;
-     width: 60px;
-     height: 70px;
-     /* zoom */
-     }
-     .pMiniCard {
-       p {
-         width: 230px;
-         transition: 250ms;
-       }
-     }
-     h3 {
-       width: 230px;
-     }
+    @include animPrix();
    }
- 
-   .miniCard2:hover {
-      .animationPrix {
-          .iconnePrix {
-     color: white;
-     transition: 800ms;
-     transform: rotate(0deg);
-          }
-         }
-   }  
    .miniCard3:hover {
-    .animationPrix {
-     transition: 500ms;
-     left: 333px;
-     background-color: $Tertiaire;
-     width: 60px;
-     height: 70px;
-     /* zoom */
-     }
-     .pMiniCard {
-       p {
-         width: 230px;
-         transition: 250ms;
-       }
-     }
-     h3 {
-       width: 230px;
-     }
+    @include animPrix();
    }
+   .miniCard4:hover {
+    @include animPrix();
+   }
+
  
-   .miniCard3:hover {
-      .animationPrix {
-          .iconnePrix {
-     color: white;
-     transition: 800ms;
-     transform: rotate(0deg);
-          }
-         }
-   }  
+   
 
   .button_explorer {
     margin-top: 20px;

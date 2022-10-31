@@ -214,6 +214,37 @@ html, body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.card .miniCard4 {
+  height: 70px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 2px 10px 0px lightgray;
+  margin-bottom: 10px;
+}
+.card .miniCard4 h3 {
+  font-size: 18px;
+  padding-left: 10px;
+  padding-top: 10px;
+  margin: 0;
+  width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card .miniCard4 .pMiniCard {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.card .miniCard4 .pMiniCard p {
+  padding-top: 5px;
+  margin: 0;
+  color: rgb(71, 71, 71);
+  width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 .miniCard1 {
   animation-duration: 2s;
@@ -231,6 +262,12 @@ html, body {
   animation-duration: 2s;
   animation-name: anim;
   animation-delay: 100ms;
+}
+
+.miniCard4 {
+  animation-duration: 2s;
+  animation-name: anim;
+  animation-delay: 150ms;
 }
 
 @keyframes anim {
@@ -277,18 +314,17 @@ html, body {
   height: 70px;
   /* zoom */
 }
+.miniCard1:hover .iconnePrix {
+  color: white;
+  transition: 800ms;
+  transform: rotate(0deg);
+}
 .miniCard1:hover .pMiniCard p {
   width: 230px;
   transition: 250ms;
 }
 .miniCard1:hover h3 {
   width: 230px;
-}
-
-.miniCard1:hover .animationPrix .iconnePrix {
-  color: white;
-  transition: 800ms;
-  transform: rotate(0deg);
 }
 
 .miniCard2:hover .animationPrix {
@@ -299,18 +335,17 @@ html, body {
   height: 70px;
   /* zoom */
 }
+.miniCard2:hover .iconnePrix {
+  color: white;
+  transition: 800ms;
+  transform: rotate(0deg);
+}
 .miniCard2:hover .pMiniCard p {
   width: 230px;
   transition: 250ms;
 }
 .miniCard2:hover h3 {
   width: 230px;
-}
-
-.miniCard2:hover .animationPrix .iconnePrix {
-  color: white;
-  transition: 800ms;
-  transform: rotate(0deg);
 }
 
 .miniCard3:hover .animationPrix {
@@ -321,6 +356,11 @@ html, body {
   height: 70px;
   /* zoom */
 }
+.miniCard3:hover .iconnePrix {
+  color: white;
+  transition: 800ms;
+  transform: rotate(0deg);
+}
 .miniCard3:hover .pMiniCard p {
   width: 230px;
   transition: 250ms;
@@ -329,10 +369,25 @@ html, body {
   width: 230px;
 }
 
-.miniCard3:hover .animationPrix .iconnePrix {
+.miniCard4:hover .animationPrix {
+  transition: 500ms;
+  left: 333px;
+  background-color: #99E2D0;
+  width: 60px;
+  height: 70px;
+  /* zoom */
+}
+.miniCard4:hover .iconnePrix {
   color: white;
   transition: 800ms;
   transform: rotate(0deg);
+}
+.miniCard4:hover .pMiniCard p {
+  width: 230px;
+  transition: 250ms;
+}
+.miniCard4:hover h3 {
+  width: 230px;
 }
 
 .button_explorer {
