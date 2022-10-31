@@ -67,6 +67,7 @@ html, body {
 
 .logo_img {
   width: 140px;
+  margin-left: -10px;
 }
 
 .flecheHeader {
