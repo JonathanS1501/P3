@@ -18,9 +18,52 @@ $grandiant : linear-gradient(170deg, rgba(255,0,254,1) 0%, rgba(154,0,255,1) 100
     width: 100%;
     max-width: 414px;
     min-width: 414px;
+    height: auto;
     margin: auto;
+    padding-left: 0px;
+      padding-right: 0px;
   }
   
+  .loader {
+    width: 414px;
+    height: 0px;
+    background-color: rgb(255, 255, 255);
+    opacity: 95%;
+    position: absolute;
+    animation-duration: 3s;
+    animation-name: loader;
+  }
+
+  
+
+  .loaderAnim {
+    margin-top: 250px;
+    animation-name: loaderAnim;
+    animation-duration: 3s;
+  }
+
+  @keyframes loaderAnim {
+    0% {
+      opacity: 100%;
+    }
+    100%{
+      opacity: 0%;
+    }
+  }
+  
+
+  @keyframes loader {
+    from {
+      height: 2205px;
+    }
+    90% {
+      height: 2205px;
+    }
+    to {
+      height: 0px;
+    }
+  }
+
   .textGras {
     font-weight: bold;
     font-size: 24px;
@@ -70,7 +113,6 @@ $grandiant : linear-gradient(170deg, rgba(255,0,254,1) 0%, rgba(154,0,255,1) 100
   
   .logo {
     height: 50px;
-    position: relative;
     box-shadow:  0px 0px 10px 0px gray;
   }
   
@@ -97,6 +139,22 @@ $grandiant : linear-gradient(170deg, rgba(255,0,254,1) 0%, rgba(154,0,255,1) 100
     justify-content: center;
     align-items: center;
     gap: 10px;
+  }
+
+  .flexColumnCentreFonctionnement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .flexColumnCentreRestaurant {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
   }
   
   .button_explorer {
@@ -210,9 +268,25 @@ $grandiant : linear-gradient(170deg, rgba(255,0,254,1) 0%, rgba(154,0,255,1) 100
     transition-duration: 500ms;
     width: 95%;
   }
-  
-  
+
+  @keyframes nouveau {
+    from {
+      opacity: 0%;
+    }
+    90% {
+      opacity: 0%;
+     
+    }
+    to {
+      opacity: 100%;
+      
+    }
+  }
+
+
   .nouveau {
+    animation-name: nouveau;
+    animation-duration: 3s;
     position: absolute;
     width: 90px;
     height: 30px;
@@ -278,6 +352,13 @@ $grandiant : linear-gradient(170deg, rgba(255,0,254,1) 0%, rgba(154,0,255,1) 100
     font-size: 22px;
    
   }
+
+  .btn {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+  }
+
   
   .iconneHeart {
     width: 25px;
@@ -338,5 +419,51 @@ $grandiant : linear-gradient(170deg, rgba(255,0,254,1) 0%, rgba(154,0,255,1) 100
     font-size: 10px;
     padding-right: 10px;
   }
-  
-  
+
+  @media screen and (min-width: 2000px) {
+    html, body {
+      max-width: 2000px;
+    }
+
+    .loader {
+      width: 2000px;
+      height: 0px;
+      position: absolute;
+      animation-duration: 3s;
+      animation-name: loader;
+    }
+    
+    .titreFonctionnement {
+      padding-bottom: 30px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .flexColumnCentreFonctionnement {
+      width: 500px;
+      margin-left: 750px;
+    }
+
+    .flexColumnCentreRestaurant {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    .nouveau {
+      margin-left: 350px;
+    }
+    @keyframes loader {
+      from {
+        height: 2205px;
+      }
+      90% {
+        height: 2205px;
+      }
+      to {
+        height: 0px;
+      }
+    }
+  }
