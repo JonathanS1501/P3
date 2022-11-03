@@ -34,23 +34,86 @@ $grandiant : linear-gradient(170deg, rgba(255,0,254,1) 0%, rgba(154,0,255,1) 100
     animation-name: loader;
   }
 
-  
-
   .loaderAnim {
-    margin-top: 250px;
-    animation-name: loaderAnim;
+    margin-top: 100px;
+  }
+
+  .lds-ellipsis {
+    display: flex;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    opacity: 0%;
+    div {
+      position: absolute;
+      top: 33px;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background: $Primaire;
+      animation-timing-function: cubic-bezier(0, 1, 1, 0);
+      &:nth-child(1) {
+        left: 8px;
+        animation: lds-ellipsis1 0.6s infinite;
+      }
+      &:nth-child(2) {
+        left: 8px;
+        animation: lds-ellipsis2 0.6s infinite;
+      }
+      &:nth-child(3) {
+        left: 32px;
+        animation: lds-ellipsis2 0.6s infinite;
+      }
+      &:nth-child(4) {
+        left: 56px;
+        animation: lds-ellipsis3 0.6s infinite;
+      }
+    }
+    
+  }
+
+  .lds-ellipsis{
+    animation-name: anim;
     animation-duration: 3s;
   }
 
-  @keyframes loaderAnim {
+  @keyframes anim {
     0% {
       opacity: 100%;
     }
-    100%{
+    99% {
+      opacity: 100%;
+    }
+    100% {
       opacity: 0%;
+      display: none;
     }
   }
   
+  @keyframes lds-ellipsis1 {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes lds-ellipsis3 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes lds-ellipsis2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(24px, 0);
+    }
+  }
 
   @keyframes loader {
     from {
@@ -256,6 +319,15 @@ $grandiant : linear-gradient(170deg, rgba(255,0,254,1) 0%, rgba(154,0,255,1) 100
     background-color: $gris;
   }
   
+  .restaurantPc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+
   .cubeRestaurant {
     height: auto;
     background-color:white;
@@ -420,18 +492,29 @@ $grandiant : linear-gradient(170deg, rgba(255,0,254,1) 0%, rgba(154,0,255,1) 100
     padding-right: 10px;
   }
 
-  @media screen and (min-width: 2000px) {
+  @media screen and (min-width: 1300px) {
     html, body {
       max-width: 2000px;
     }
 
+    
+
     .loader {
       width: 2000px;
-      height: 0px;
-      position: absolute;
-      animation-duration: 3s;
-      animation-name: loader;
     }
+
+    
+    .lds-ellipsis div {
+      position: absolute;
+      top: 33px;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background: $Primaire;
+      animation-timing-function: cubic-bezier(0, 1, 1, 0);
+    }
+    
+    
     
     .titreFonctionnement {
       padding-bottom: 30px;
@@ -440,20 +523,44 @@ $grandiant : linear-gradient(170deg, rgba(255,0,254,1) 0%, rgba(154,0,255,1) 100
     }
 
     .flexColumnCentreFonctionnement {
-      width: 500px;
-      margin-left: 750px;
-    }
-
-    .flexColumnCentreRestaurant {
       display: flex;
       flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-      padding: 20px;
     }
+
+    .miniCard {
+      width: 25%;
+    }
+
+    .titreRestaurant{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 50px;
+    }
+
+    .cubeRestaurant {
+      width: 30%;
+    }
+
+
+    .cubeRestaurant:hover {
+      transition-duration: 500ms;
+      width: 35%;
+    }
+
+    .cubeDetailRestaurant {
+      h3 {
+        white-space: nowrap;
+      }
+    }
+
+    .restaurantPc {
+      flex-direction: row;
+      gap: 100px;
+    }
+  
     .nouveau {
-      margin-left: 350px;
+      margin-left: 250px ;
     }
     @keyframes loader {
       from {

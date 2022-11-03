@@ -121,143 +121,256 @@ html, body {
   margin-top: -38px;
 }
 
-.card {
-  margin-top: 20px;
-  width: 90%;
-  height: auto;
+.decorationNone {
+  text-decoration: none;
+  color: black;
 }
-.card .titreCard {
+
+.titreCard {
   font-size: 20px;
   margin-bottom: 20px;
   border-bottom: 3px solid #99E2D0;
   width: 40px;
 }
-.card .titreCard p {
+.titreCard p {
   margin-bottom: 4px;
 }
-.card .miniCard1 {
-  height: 70px;
-  background-color: white;
-  border-radius: 15px;
-  box-shadow: 0px 2px 10px 0px lightgray;
-  margin-bottom: 10px;
-}
-.card .miniCard1 h3 {
+
+.iconnePrix {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  opacity: 0%;
+  transform: rotate(500deg);
+  color: transparent;
   font-size: 18px;
-  padding-left: 10px;
-  padding-top: 10px;
-  margin: 0;
-  width: 300px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
-.card .miniCard1 .pMiniCard {
-  padding-left: 10px;
+
+.prix {
+  width: 10%;
+  height: auto;
+  margin-top: 40px;
+  margin-left: 5px;
+  font-weight: bold;
+  color: #4b4b4b;
+}
+
+.miniCardAnimation {
+  background-color: #99E2D0;
+  margin-left: 4%;
+  width: 0%;
+  height: 0;
+  border-radius: 0 15px 15px 0;
+  padding: 0px;
+}
+
+.Card {
+  width: 90%;
+  height: auto;
+  padding: 10px;
+}
+.Card .miniCard1 {
+  width: 100%; /* a definir */
+  height: auto;
+  border-radius: 15px;
   display: flex;
   flex-direction: row;
-}
-.card .miniCard1 .pMiniCard p {
-  padding-top: 5px;
-  margin: 0;
-  color: rgb(71, 71, 71);
-  width: 300px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.card .miniCard2 {
-  height: 70px;
+  margin-top: 10px;
   background-color: white;
-  border-radius: 15px;
-  box-shadow: 0px 2px 10px 0px lightgray;
-  margin-bottom: 10px;
 }
-.card .miniCard2 h3 {
+.Card .miniCard1 .miniCardText {
+  background-color: white;
+  width: 85%;
+  border-radius: 15px;
+}
+.Card .miniCard1 .miniCardText h3 {
   font-size: 18px;
-  padding-left: 10px;
-  padding-top: 10px;
+  padding-top: 15px;
+  padding-left: 15px;
   margin: 0;
-  width: 300px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.card .miniCard2 .pMiniCard {
-  padding-left: 10px;
+.Card .miniCard1 .miniCardText p {
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  margin: 0;
+  color: #4b4b4b;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.Card .miniCard1:hover .miniCardAnimation {
+  width: 20%;
+  height: auto;
+  transition-duration: 1s;
+}
+.Card .miniCard1:hover .miniCardText {
+  width: 65%;
+  transition-duration: 1s;
+}
+.Card .miniCard1:hover .iconnePrix {
+  opacity: 100%;
+  transition-duration: 1s;
+  color: white;
+  transition: 800ms;
+  transform: rotate(0deg);
+}
+.Card .miniCard2 {
+  width: 100%; /* a definir */
+  height: auto;
+  border-radius: 15px;
   display: flex;
   flex-direction: row;
-}
-.card .miniCard2 .pMiniCard p {
-  padding-top: 5px;
-  margin: 0;
-  color: rgb(71, 71, 71);
-  width: 300px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.card .miniCard3 {
-  height: 70px;
+  margin-top: 10px;
   background-color: white;
-  border-radius: 15px;
-  box-shadow: 0px 2px 10px 0px lightgray;
-  margin-bottom: 10px;
 }
-.card .miniCard3 h3 {
+.Card .miniCard2 .miniCardText {
+  background-color: white;
+  width: 85%;
+  border-radius: 15px;
+}
+.Card .miniCard2 .miniCardText h3 {
   font-size: 18px;
-  padding-left: 10px;
-  padding-top: 10px;
+  padding-top: 15px;
+  padding-left: 15px;
   margin: 0;
-  width: 300px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.card .miniCard3 .pMiniCard {
-  padding-left: 10px;
+.Card .miniCard2 .miniCardText p {
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  margin: 0;
+  color: #4b4b4b;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.Card .miniCard2:hover .miniCardAnimation {
+  width: 20%;
+  height: auto;
+  transition-duration: 1s;
+}
+.Card .miniCard2:hover .miniCardText {
+  width: 65%;
+  transition-duration: 1s;
+}
+.Card .miniCard2:hover .iconnePrix {
+  opacity: 100%;
+  transition-duration: 1s;
+  color: white;
+  transition: 800ms;
+  transform: rotate(0deg);
+}
+.Card .miniCard3 {
+  width: 100%; /* a definir */
+  height: auto;
+  border-radius: 15px;
   display: flex;
   flex-direction: row;
-}
-.card .miniCard3 .pMiniCard p {
-  padding-top: 5px;
-  margin: 0;
-  color: rgb(71, 71, 71);
-  width: 300px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.card .miniCard4 {
-  height: 70px;
+  margin-top: 10px;
   background-color: white;
-  border-radius: 15px;
-  box-shadow: 0px 2px 10px 0px lightgray;
-  margin-bottom: 10px;
 }
-.card .miniCard4 h3 {
+.Card .miniCard3 .miniCardText {
+  background-color: white;
+  width: 85%;
+  border-radius: 15px;
+}
+.Card .miniCard3 .miniCardText h3 {
   font-size: 18px;
-  padding-left: 10px;
-  padding-top: 10px;
+  padding-top: 15px;
+  padding-left: 15px;
   margin: 0;
-  width: 300px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.card .miniCard4 .pMiniCard {
-  padding-left: 10px;
+.Card .miniCard3 .miniCardText p {
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  margin: 0;
+  color: #4b4b4b;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.Card .miniCard3:hover .miniCardAnimation {
+  width: 20%;
+  height: auto;
+  transition-duration: 1s;
+}
+.Card .miniCard3:hover .miniCardText {
+  width: 65%;
+  transition-duration: 1s;
+}
+.Card .miniCard3:hover .iconnePrix {
+  opacity: 100%;
+  transition-duration: 1s;
+  color: white;
+  transition: 800ms;
+  transform: rotate(0deg);
+}
+.Card .miniCard4 {
+  width: 100%; /* a definir */
+  height: auto;
+  border-radius: 15px;
   display: flex;
   flex-direction: row;
+  margin-top: 10px;
+  background-color: white;
 }
-.card .miniCard4 .pMiniCard p {
-  padding-top: 5px;
+.Card .miniCard4 .miniCardText {
+  background-color: white;
+  width: 85%;
+  border-radius: 15px;
+}
+.Card .miniCard4 .miniCardText h3 {
+  font-size: 18px;
+  padding-top: 15px;
+  padding-left: 15px;
   margin: 0;
-  color: rgb(71, 71, 71);
-  width: 300px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.Card .miniCard4 .miniCardText p {
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  margin: 0;
+  color: #4b4b4b;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.Card .miniCard4:hover .miniCardAnimation {
+  width: 20%;
+  height: auto;
+  transition-duration: 1s;
+}
+.Card .miniCard4:hover .miniCardText {
+  width: 65%;
+  transition-duration: 1s;
+}
+.Card .miniCard4:hover .iconnePrix {
+  opacity: 100%;
+  transition-duration: 1s;
+  color: white;
+  transition: 800ms;
+  transform: rotate(0deg);
+}
+
+.CardEnsemble {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .miniCard1 {
@@ -292,116 +405,12 @@ html, body {
     opacity: 100%;
   }
 }
-.prix {
-  position: absolute;
-  margin-top: -8;
-  margin-left: -95;
-  font-weight: bold;
-  color: rgb(71, 71, 71);
-  padding-left: 40px;
-}
-
-.iconnePrix {
-  color: transparent;
-  font-size: 20px;
+.flexCentreFooter {
   display: flex;
   justify-content: center;
-  margin-top: 25px;
-  transform: rotate(-500deg);
-}
-
-.animationPrix {
-  position: absolute;
-  left: 397px;
-  margin-top: 100px;
-  border-radius: 0px 15px 15px 0px;
-  margin: 0;
-  width: 0px;
-  height: 70px;
-}
-
-.miniCard1:hover .animationPrix {
-  transition: 500ms;
-  left: 333px;
-  background-color: #99E2D0;
-  width: 60px;
-  height: 70px;
-  /* zoom */
-}
-.miniCard1:hover .iconnePrix {
-  color: white;
-  transition: 800ms;
-  transform: rotate(0deg);
-}
-.miniCard1:hover .pMiniCard p {
-  width: 230px;
-  transition: 250ms;
-}
-.miniCard1:hover h3 {
-  width: 230px;
-}
-
-.miniCard2:hover .animationPrix {
-  transition: 500ms;
-  left: 333px;
-  background-color: #99E2D0;
-  width: 60px;
-  height: 70px;
-  /* zoom */
-}
-.miniCard2:hover .iconnePrix {
-  color: white;
-  transition: 800ms;
-  transform: rotate(0deg);
-}
-.miniCard2:hover .pMiniCard p {
-  width: 230px;
-  transition: 250ms;
-}
-.miniCard2:hover h3 {
-  width: 230px;
-}
-
-.miniCard3:hover .animationPrix {
-  transition: 500ms;
-  left: 333px;
-  background-color: #99E2D0;
-  width: 60px;
-  height: 70px;
-  /* zoom */
-}
-.miniCard3:hover .iconnePrix {
-  color: white;
-  transition: 800ms;
-  transform: rotate(0deg);
-}
-.miniCard3:hover .pMiniCard p {
-  width: 230px;
-  transition: 250ms;
-}
-.miniCard3:hover h3 {
-  width: 230px;
-}
-
-.miniCard4:hover .animationPrix {
-  transition: 500ms;
-  left: 333px;
-  background-color: #99E2D0;
-  width: 60px;
-  height: 70px;
-  /* zoom */
-}
-.miniCard4:hover .iconnePrix {
-  color: white;
-  transition: 800ms;
-  transform: rotate(0deg);
-}
-.miniCard4:hover .pMiniCard p {
-  width: 230px;
-  transition: 250ms;
-}
-.miniCard4:hover h3 {
-  width: 230px;
+  align-items: center;
+  background-color: #f6f6f6;
+  padding: 20px;
 }
 
 .button_explorer {
@@ -459,7 +468,7 @@ html, body {
   padding-right: 10px;
 }
 
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 1300px) {
   html, body {
     max-width: 2000px;
   }
@@ -468,99 +477,17 @@ html, body {
     margin-top: -50px;
     height: auto;
     max-width: 2000px;
-    min-width: 2000px;
+    min-width: 500px;
   }
-  .card {
-    width: 414px;
+  .Card {
+    width: 25%;
+    height: auto;
+    padding: 10px;
   }
-  .animationPrix {
-    position: absolute;
-    left: 1220px;
-    margin-top: 100px;
-    border-radius: 0px 15px 15px 0px;
-    margin: 0;
-    width: 0px;
-    height: 70px;
-  }
-  .miniCard1:hover .animationPrix {
-    transition: 500ms;
-    left: 1147px;
-    background-color: #99E2D0;
-    width: 60px;
-    height: 70px;
-    /* zoom */
-  }
-  .miniCard1:hover .iconnePrix {
-    color: white;
-    transition: 800ms;
-    transform: rotate(0deg);
-  }
-  .miniCard1:hover .pMiniCard p {
-    width: 230px;
-    transition: 250ms;
-  }
-  .miniCard1:hover h3 {
-    width: 230px;
-  }
-  .miniCard2:hover .animationPrix {
-    transition: 500ms;
-    left: 1147px;
-    background-color: #99E2D0;
-    width: 60px;
-    height: 70px;
-    /* zoom */
-  }
-  .miniCard2:hover .iconnePrix {
-    color: white;
-    transition: 800ms;
-    transform: rotate(0deg);
-  }
-  .miniCard2:hover .pMiniCard p {
-    width: 230px;
-    transition: 250ms;
-  }
-  .miniCard2:hover h3 {
-    width: 230px;
-  }
-  .miniCard3:hover .animationPrix {
-    transition: 500ms;
-    left: 1147px;
-    background-color: #99E2D0;
-    width: 60px;
-    height: 70px;
-    /* zoom */
-  }
-  .miniCard3:hover .iconnePrix {
-    color: white;
-    transition: 800ms;
-    transform: rotate(0deg);
-  }
-  .miniCard3:hover .pMiniCard p {
-    width: 230px;
-    transition: 250ms;
-  }
-  .miniCard3:hover h3 {
-    width: 230px;
-  }
-  .miniCard4:hover .animationPrix {
-    transition: 500ms;
-    left: 1147px;
-    background-color: #99E2D0;
-    width: 60px;
-    height: 70px;
-    /* zoom */
-  }
-  .miniCard4:hover .iconnePrix {
-    color: white;
-    transition: 800ms;
-    transform: rotate(0deg);
-  }
-  .miniCard4:hover .pMiniCard p {
-    width: 230px;
-    transition: 250ms;
-  }
-  .miniCard4:hover h3 {
-    width: 230px;
+  .flexColumnCentreMenu {
+    flex-direction: row;
+    gap: 5%;
+    align-items: unset;
   }
   .titre {
     width: auto;
@@ -571,15 +498,20 @@ html, body {
     margin-top: 20px;
   }
   .imgRestaurant {
+    background-size: cover;
+    background-position: center;
     width: 100%;
-    height: 100%;
+    height: 50%;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    padding-bottom: 10px;
   }
   .titrelarge {
     display: block;
     position: absolute;
     color: white;
-    font-size: 200px;
-    margin-top: 700px;
+    font-size: 500%;
+    margin-top: 200px;
     margin-left: 100px;
     font-style: italic;
     font-weight: bold;
