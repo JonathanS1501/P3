@@ -464,7 +464,6 @@ html, body {
     width: 2000px;
   }
   .lds-ellipsis div {
-    position: absolute;
     top: 33px;
     width: 13px;
     height: 13px;
