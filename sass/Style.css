@@ -456,7 +456,7 @@ html, body {
   padding-right: 10px;
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1050px) {
   html, body {
     max-width: 2000px;
   }
@@ -491,11 +491,11 @@ html, body {
     padding-bottom: 50px;
   }
   .cubeRestaurant {
-    width: 30%;
+    width: 450px;
   }
   .cubeRestaurant:hover {
     transition-duration: 500ms;
-    width: 35%;
+    width: 470px;
   }
   .cubeDetailRestaurant h3 {
     white-space: nowrap;
@@ -505,7 +505,7 @@ html, body {
     gap: 100px;
   }
   .nouveau {
-    margin-left: 250px;
+    margin-left: 350px;
   }
   @keyframes loader {
     from {

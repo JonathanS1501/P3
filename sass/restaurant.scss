@@ -353,7 +353,7 @@ $gris3 : #4b4b4b;
   padding-right: 10px;
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1050px) {
   html, body {
     max-width: 2000px;
   }
@@ -391,7 +391,7 @@ $gris3 : #4b4b4b;
   background-size: cover;
     background-position: center;
     width: 100%;
-    height: 50%;
+    height: 500px;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
     padding-bottom: 10px;

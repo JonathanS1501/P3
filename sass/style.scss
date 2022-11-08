@@ -492,7 +492,7 @@ $grandiant : linear-gradient(170deg, rgba(255,0,254,1) 0%, rgba(154,0,255,1) 100
     padding-right: 10px;
   }
 
-  @media screen and (min-width: 1300px) {
+  @media screen and (min-width: 1050px) {
     html, body {
       max-width: 2000px;
     }
@@ -539,13 +539,13 @@ $grandiant : linear-gradient(170deg, rgba(255,0,254,1) 0%, rgba(154,0,255,1) 100
     }
 
     .cubeRestaurant {
-      width: 30%;
+      width: 450px;
     }
 
 
     .cubeRestaurant:hover {
       transition-duration: 500ms;
-      width: 35%;
+      width: 470px;
     }
 
     .cubeDetailRestaurant {
@@ -560,7 +560,7 @@ $grandiant : linear-gradient(170deg, rgba(255,0,254,1) 0%, rgba(154,0,255,1) 100
     }
   
     .nouveau {
-      margin-left: 250px ;
+      margin-left: 350px ;
     }
     @keyframes loader {
       from {
