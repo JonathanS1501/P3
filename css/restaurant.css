@@ -527,4 +527,23 @@ html, body {
       opacity: 75%;
     }
   }
+}
+@media screen and (min-width: 414px) {
+  html, body {
+    max-width: 2000px;
+    min-width: 414px;
+  }
+  .menu {
+    position: relative;
+    margin-top: -50px;
+    height: auto;
+    max-width: 2000px;
+    min-width: 414px;
+    width: 100%;
+    background-color: #f6f6f6;
+    border-radius: 40px 40px 0px 0px;
+  }
+  .Card {
+    width: 400px;
+  }
 }/*# sourceMappingURL=restaurant.css.map */

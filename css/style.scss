@@ -237,6 +237,7 @@ $grandiant : linear-gradient(170deg, rgba(255,0,254,1) 0%, rgba(154,0,255,1) 100
     transition-duration: 100ms;
     width: 200px;
     background: linear-gradient(70deg, rgba(255,0,254,1) 0%, rgba(154,0,255,1) 100%);
+    opacity: 50%;
   }
   
   .fonctionnement {
@@ -500,7 +501,8 @@ $grandiant : linear-gradient(170deg, rgba(255,0,254,1) 0%, rgba(154,0,255,1) 100
     
 
     .loader {
-      width: 2000px;
+      width: 100%;
+      max-width: 2000px;
     }
 
     
@@ -573,4 +575,31 @@ $grandiant : linear-gradient(170deg, rgba(255,0,254,1) 0%, rgba(154,0,255,1) 100
         height: 0px;
       }
     }
+  }
+
+  @media screen and (min-width: 414px) {
+  
+    html, body {
+      max-width: 2000px;
+      min-width: 414px;
+    }
+    .loader {
+      width: 100%;
+    }
+
+    .restaurantPc {
+      width: 450px;
+    }
+    
+    .titreRestaurant{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .titreFonctionnement {
+      padding-bottom: 30px;
+      display: flex;
+      justify-content: center;
+    }
+    
   }

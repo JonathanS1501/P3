@@ -427,3 +427,24 @@ $gris3 : #4b4b4b;
   
 }
 
+@media screen and (min-width: 414px) {
+  
+  html, body {
+    max-width: 2000px;
+    min-width: 414px;
+  }
+  .menu {
+    position: relative;
+    margin-top: -50px;
+    height: auto;
+    max-width: 2000px;
+    min-width: 414px;
+    width: 100%;
+    background-color: $gris;
+    border-radius: 40px 40px 0px 0px;
+  }
+  .Card {
+    width: 400px;
+  }
+
+}

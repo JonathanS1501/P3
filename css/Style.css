@@ -225,6 +225,7 @@ html, body {
   transition-duration: 100ms;
   width: 200px;
   background: linear-gradient(70deg, rgb(255, 0, 254) 0%, rgb(154, 0, 255) 100%);
+  opacity: 50%;
 }
 
 .fonctionnement {
@@ -461,7 +462,8 @@ html, body {
     max-width: 2000px;
   }
   .loader {
-    width: 2000px;
+    width: 100%;
+    max-width: 2000px;
   }
   .lds-ellipsis div {
     top: 33px;
@@ -516,5 +518,27 @@ html, body {
     to {
       height: 0px;
     }
+  }
+}
+@media screen and (min-width: 414px) {
+  html, body {
+    max-width: 2000px;
+    min-width: 414px;
+  }
+  .loader {
+    width: 100%;
+  }
+  .restaurantPc {
+    width: 450px;
+  }
+  .titreRestaurant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .titreFonctionnement {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
   }
 }/*# sourceMappingURL=style.css.map */
